@@ -1,0 +1,20 @@
+<label>username</label>
+<input [(ngModel)]="username" type="text" />
+<label>room</label>
+<select name="" id="" [(ngModel)]="room">
+  <option value="room1">room 1</option>
+  <option value="room2">room 2</option>
+</select>
+<button (click)="join()">click</button>
+
+<input [(ngModel)]="msg" type="text" />
+<button (click)="send()">Send</button>
+
+<div *ngFor="let item of receivedMsgArr">
+  <p>{{ item.username }}</p>
+  <p>{{ item.message }}</p>
+</div>
+<div *ngFor="let item of msgArray">
+  <h1>{{ item.username }}</h1>
+  <h2>{{ item.message }}</h2>
+</div>
